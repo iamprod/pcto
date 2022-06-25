@@ -1,0 +1,39 @@
+<html>
+	<title>Manuale Comandi</title>
+	<link href="CSS/stile.css" rel="stylesheet" type="text/css"/>
+	<body class="container3">
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">PRIMA PAGINA</a>
+			<a href="DescContesto.html">DESC. DEL CONTESTO</a>
+			<a href="ProfProfessionale.html" class="active">PROFILO PROFESS.</a>
+			<a href="AttivitaSvolte.html">DESC. ATIVITÁ SVOLTE</a>
+			<a href="AnalisiEsper.html">ANALISI ESPERIENZA</a>
+			<a href="Conclusioni.html">CONCLUSIONI</a>
+		</div>
+
+		<span onclick="openNav()">&#9776;</span>
+		<div id="main">
+			<h2 style="text-align:center; font-size:25px">PROFILO PROFESSIONALE</h2> 
+			<div style="padding-top:10%">
+				<h3>
+					Le attivit&aacute; di cui ero responsabile in RadioGalileo, inizialmente erano semplici. Inizialmente facevo la trascrizione di contenuti da cassetta analogica a file digitale.
+					<br>Eseguito il compito mi dicevano che sembravo entusiasta nell&rsquo;aiutare. Cos&iacute;, a seguito di un collaudo delle mie abilit&aacute;, le responsabilit&aacute; a me concesse hanno visto un incremento. Son passato da fare le cose pi&uacute; semplici con delle supervisioni, a fare numerose attivit&aacute; in modo autonomo. In seguito far&oacute; un elenco delle attivit&aacute; che ho potuto svolgere.
+					<br>L&rsquo;orario di lavoro previsto era dalle 9:30 alle 14:00 e dalle 15:30 alle 18:00. Dal lunedi al venerd&iacute;, mentre il sabato era dalle 9:30 alle 14:30.
+				</h3>
+			</div>
+		</div>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "400px";
+				document.getElementById("main").style.marginRight = "400px";
+			}
+			  
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+  				document.getElementById("main").style.marginRight = "0";
+			}
+		</script>
+	</body>
+</html>
