@@ -1,0 +1,51 @@
+<html lang="it">
+	<title>Manuale Comandi</title>
+	<link href="CSS/stile.css" rel="stylesheet" type="text/css"/>
+	<body class="container3">
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a htef="Conclusioni.html">ITALIAN</a>
+			<a href="index.html">PRIMA PAGINA</a>
+			<a href="DescContesto.html">DESC. DEL CONTESTO</a>
+			<a href="ProfProfessionale.html">PROFILO PROFESS.</a>
+			<a href="AttivitaSvolte.html">DESC. ATIVITÁ SVOLTE</a>
+			<a href="AnalisiEsper.html">ANALISI ESPERIENZA</a>
+			<a href="Conclusioni.html" class="active">CONCLUSIONI</a>
+		</div>
+
+		<span onclick="openNav()"> &#9776;</span>
+		
+		<div id="main">
+			<h2 style="text-align:center; font-size:25px">CONCLUSIONI / RIFLESSIONI</h2> 
+			<div style="padding-top:10%">
+				<h3 id="siteContent">
+        From my point of view, the skills acquired in the internship will certainly come in handy in a working future. They allowed me to assert, develop and define some of my skills.
+				I thank for having had the opportunity to get out of the theoretical and simulative bubble of which the school often takes advantage, refining my vision on how it really is to work in the field. 
+        In my opinion, institutions should increase the number of hours devoted to similar opportunities. RadioGalileo really motivated me, confirmed my opinion on the direction I want to follow in the professional field and gave me the motivation to continue to increase my knowledge in this niche. 
+        As for the second company, I would advise the school not to leave the company in doubt about the business, but to provide a schedule of recommended activities to follow. 
+        I use the term recommended activities since in the end each activity has its own way of working, so you are free to do it your own way. So as to avoid finding yourself lost in the house of failure to organize.
+    		</h3>
+			</div>
+		</div>
+		
+			
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "400px";
+				document.getElementById("main").style.marginRight = "400px";
+			}
+			  
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+  				document.getElementById("main").style.marginRight = "0";
+			}
+			
+			function changeLanguage(lang) {
+   			   location.hash = lang;
+   			   location.reload();
+    			}
+			
+		</script>
+	</body>
+</html>
