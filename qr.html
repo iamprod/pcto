@@ -1,0 +1,27 @@
+<html>
+	<title>Codice QR</title>
+	<link href="CSS/stile.css" rel="stylesheet" type="text/css"/>
+	<body class="container3">
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">INDETRO</a>
+		</div>
+	
+		<span onclick="openNav()"> &#9776;</span>	  
+    
+    <img src="qr.png" alt="Codice QR">
+    
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "400px";
+				document.getElementById("main").style.marginRight = "400px";
+			}
+			  
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+  				document.getElementById("main").style.marginRight = "0";
+			}
+		</script>
+	</body>
+</html>
