@@ -1,10 +1,12 @@
-<html>
+<html lang="it">
 	<title>Manuale Comandi</title>
 	<link href="CSS/stile.css" rel="stylesheet" type="text/css"/>
 	<body class="container3">
 
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a onclick="changeLanguage('eng')">INGLESE</a>
+			<a onclick="changeLanguage('it')">ITALIANO</a>
 			<a href="index.html">PRIMA PAGINA</a>
 			<a href="DescContesto.html">DESC. DEL CONTESTO</a>
 			<a href="ProfProfessionale.html">PROFILO PROFESS.</a>
@@ -17,7 +19,7 @@
 		
 		<div id="main">
 			<h2 style="text-align:center; font-size:25px">CONCLUSIONI / RIFLESSIONI</h2> 
-			<div style="padding-top:10%">
+			<div id="siteContent" style="padding-top:10%">
 				<h3>Dal mio punto di vista, le competenze aquisite nel tirocinio, mi tornaranno sicuramente utili in un futuro lavorativo. Mi hanno permesso di affermare, sviluppare e definire alcune delle mie skill.
 				Ringrazio di aver avuto la possiblitá di uscire dalla bolla teorica e simulativa di cui spesso usufruisce la scuola, raffinando la mia mia visione sul come é veramente lavorare sul campo.  
 				Secondo il mio giudizio, gli instituti dovrebbero incrementare il numero di ore dedicate ad opportunitá simili. RadioGalileo mi ha realmente motivato, confermato la mia opinione sulla direzione che voglio seguire nel campo professionale e mi ha donato la motivazione di continuare ad accrescere le mia conoscenze in questa nicchia.
@@ -37,6 +39,24 @@
 				document.getElementById("mySidenav").style.width = "0";
   				document.getElementById("main").style.marginRight = "0";
 			}
+			
+			function changeLanguage(lang) {
+   			   location.hash = lang;
+   			   location.reload();
+    			}
+  
+    			// Define the language reload anchors
+    			var language = {
+      				it: {
+        				welcome: "Benvenuto al sito in italiano"
+      				}
+    			};
+
+    			if (window.location.hash == "#it") {
+        			siteContent.textContent =
+          				language.it.welcome;
+   			}
+			
 		</script>
 	</body>
 </html>
